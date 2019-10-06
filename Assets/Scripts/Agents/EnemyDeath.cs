@@ -38,11 +38,12 @@ public class EnemyDeath : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    //public void OnEnable(int path = 1)
+    //{
+    //    enabled = true;
+    //    pathChoice = path;
+    //}
 
-    public void OnEnable()
-    {
-        enabled = true;
-        pathChoice = 1;
-    }
 
 }

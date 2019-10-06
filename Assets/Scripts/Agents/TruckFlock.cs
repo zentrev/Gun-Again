@@ -61,7 +61,7 @@ public class TruckFlock : MonoBehaviour
 
     IEnumerator KillCore()
     {
-        while(speed > 0)
+        while (speed > 0)
         {
             speed = Mathf.Lerp(speed, 0.0f, decellRate * Time.deltaTime);
             if (speed < 0.1f) speed = 0;
