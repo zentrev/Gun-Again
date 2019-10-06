@@ -6,6 +6,8 @@ using Valve.VR.InteractionSystem;
 public class TurretController : MonoBehaviour
 {
 
+    [SerializeField] SteamVR_Action_Vibration m_hapticAction = null;
+
     #region Firing Fields
     [Header("Firing")]
     [SerializeField] Transform m_fireTransform = null;
@@ -73,6 +75,9 @@ public class TurretController : MonoBehaviour
                     }
                     GameObject _projectile = Instantiate(m_projectilePrefab, m_fireTransform);
                     _projectile.transform.SetParent(null);
+                    if (hand.handType == SteamVR_Input_Sources.RightHand) Pulse(0.0f, 0.10f, m_turretAnimator.speed, 150.0f, SteamVR_Input_Sources.RightHand);
+                    if (hand.handType == SteamVR_Input_Sources.LeftHand) Pulse(0.0f, 0.10f, m_turretAnimator.speed, 150.0f, SteamVR_Input_Sources.LeftHand);
+                    //Pulse(1.0f, 150.0f, 75.0f, input);
 
                     StartCoroutine(m_muzzelFlash.Flash());
                 }
@@ -89,5 +94,12 @@ public class TurretController : MonoBehaviour
     {
         if (!m_currentHands.Contains(hand)) return;
         m_currentHands.Remove(hand);
+    }
+
+
+    private void Pulse(float delay, float duration, float frequency, float amplitude, SteamVR_Input_Sources source)
+    {
+        //input.Heptic.Execute(0, duration, frequency, amplitude, input.Input);
+        m_hapticAction.Execute(delay, duration, frequency, amplitude, source);
     }
 }

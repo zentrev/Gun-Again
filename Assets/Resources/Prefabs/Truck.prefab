@@ -143,6 +143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9df95aee6ebd1a4190256303d21ecbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_hapticAction:
+    actionPath: 
+    needsReinit: 0
   m_fireTransform: {fileID: 6269966529882314291}
   m_projectilePrefab: {fileID: 3671550667910771666, guid: eac74e5a42afaec4ca7e803e41a174d4,
     type: 3}
@@ -254,7 +257,7 @@ GameObject:
   - component: {fileID: -7418475940680091941}
   m_Layer: 0
   m_Name: Truck
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
