@@ -226,7 +226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomAngleMax: 0.2
   speed: 30
-  collisionCollider: {fileID: 0}
+  decellRate: 0.5
+  collisionCollider: {fileID: 2348187895761983995}
 --- !u!114 &-1741975837856672641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,6 +843,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &1532461084224357077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,6 +1310,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &4439300221027917810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1452,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &5202078357786428185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1642,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &6075976730574665022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1784,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 100
+  m_currentHealth: 0
 --- !u!1 &6353645313229276445
 GameObject:
   m_ObjectHideFlags: 0
