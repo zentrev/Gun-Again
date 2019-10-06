@@ -56,4 +56,9 @@ public class TruckFlock : MonoBehaviour
     {
         TimeLease.RemoveTime(timerId);
     }
+
+    public void Die()
+    {
+        gameObject.GetComponent<EnemyDeath>().enabled = true;
+    }
 }

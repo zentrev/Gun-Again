@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 3903609745662725709}
   - component: {fileID: 7527727429970274762}
   - component: {fileID: 4037533261222487212}
+  - component: {fileID: 3973014686417733044}
   m_Layer: 0
   m_Name: En_E_me_X__Plosive_B_Arrel_Shad_ed (1)
   m_TagString: Untagged
@@ -348,6 +349,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4611977142179768311, guid: d7aa6104666871648abffd177db6bea2, type: 3}
+--- !u!114 &3973014686417733044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3319362301041638033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7527727429970274762}
+        m_MethodName: Explode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 20
 --- !u!1 &3664483409921835363
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +455,9 @@ GameObject:
   - component: {fileID: 4909132714472405262}
   - component: {fileID: 8163613445124406876}
   - component: {fileID: 1028468662457421976}
+  - component: {fileID: -2745684508030242631}
+  - component: {fileID: -6184361111693231452}
+  - component: {fileID: 8932720081742829883}
   m_Layer: 0
   m_Name: Sedan
   m_TagString: Untagged
@@ -448,6 +481,7 @@ Transform:
   - {fileID: 9084239091175583902}
   - {fileID: 7148069849883290917}
   - {fileID: 4622836147365416476}
+  - {fileID: 6592868425072023653}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -458,7 +492,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4923317848533964982}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 160d89c8fc3f0e9429f13ee6ae3e5194, type: 3}
   m_Name: 
@@ -513,6 +547,66 @@ MonoBehaviour:
   m_barrels:
   - {fileID: 7267966717041392697}
   - {fileID: 3319362301041638033}
+--- !u!114 &-2745684508030242631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923317848533964982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3774054802713970264}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 200
+--- !u!114 &-6184361111693231452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923317848533964982}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathCreator: {fileID: 3804171934526563009}
+  end: 2
+  speed: 15
+--- !u!114 &8932720081742829883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4923317848533964982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09234c12c12bea54bb61c25d7a0edc41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathCreator: {fileID: 0}
+  end: 2
+  speed: 30
+  spawnDistance: 100
 --- !u!1 &5645154514244640137
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,6 +671,7 @@ GameObject:
   - component: {fileID: 7692666545585676977}
   - component: {fileID: 2592790053489507112}
   - component: {fileID: 5937482404530670320}
+  - component: {fileID: 5411364268427937506}
   m_Layer: 0
   m_Name: En_E_me_X__Plosive_B_Arrel_Shad_ed (2)
   m_TagString: Untagged
@@ -674,6 +769,35 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4611977142179768311, guid: d7aa6104666871648abffd177db6bea2, type: 3}
+--- !u!114 &5411364268427937506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267966717041392697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7527727429970274762}
+        m_MethodName: Explode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 20
 --- !u!1 &7654031437773741267
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,3 +1028,95 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &9211146897862198075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6592868425072023653}
+  - component: {fileID: 3804171934526563009}
+  m_Layer: 0
+  m_Name: Lauch Path(entry)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6592868425072023653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211146897862198075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.65000015, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4155741798604070079}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3804171934526563009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9211146897862198075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5ac92bc18f545cc84cd886ece82b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  editorData:
+    _bezierPath:
+      points:
+      - {x: 0, y: 0, z: 0}
+      - {x: 2.8873389, y: 0, z: 1.4060507}
+      - {x: 3.3808749, y: 1.1502023, z: 11.643707}
+      - {x: 5.140903, y: 1.7045178, z: 12.040233}
+      - {x: 11.709854, y: 3.7733896, z: 13.520184}
+      - {x: 21.022072, y: -1.9471874, z: 6.42538}
+      - {x: 18.180918, y: -2.4011464, z: 2.0688472}
+      - {x: 13.152116, y: -3.2046466, z: -5.6421466}
+      - {x: 10.501684, y: -6.7722783, z: -6.082969}
+      - {x: 22.07173, y: -6.7722783, z: -5.635844}
+      isClosed: 0
+      space: 0
+      controlMode: 0
+      autoControlLength: 0.3
+      boundsUpToDate: 0
+      bounds:
+        m_Center: {x: 0, y: 0, z: 0}
+        m_Extent: {x: 0, y: 0, z: 0}
+      perAnchorNormalsAngle:
+      - 90
+      - 103.00993
+      - 127.55408
+      - 90
+      globalNormalsAngle: 0
+      flipNormals: 0
+    vertexPathUpToDate: 1
+    vertexPathMaxAngleError: 0.3
+    vertexPathMinVertexSpacing: 0.01
+    showTransformTool: 1
+    showPathBounds: 0
+    showPerSegmentBounds: 0
+    displayAnchorPoints: 1
+    displayControlPoints: 1
+    bezierHandleScale: 5
+    globalDisplaySettingsFoldout: 0
+    keepConstantHandleSize: 0
+    showNormalsInVertexMode: 0
+    showBezierPathInVertexMode: 0
+    showDisplayOptions: 1
+    showPathOptions: 1
+    showVertexPathDisplayOptions: 0
+    showVertexPathOptions: 1
+    showNormals: 1
+    showNormalsHelpInfo: 0
+    tabIndex: 0
+  initialized: 1
