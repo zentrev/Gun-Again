@@ -44,7 +44,7 @@ public class TurretHandle : MonoBehaviour
     protected virtual void HandAttachedUpdate(Hand hand)
     {
         targetRotation = Quaternion.LookRotation(m_turret.transform.position - hand.transform.position) * Quaternion.Inverse(handleOffset);
-        targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, targetRotation.eulerAngles.y, 0.0f);
+        targetRotation = Quaternion.Euler(0.0f, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
         m_turret.transform.rotation = Quaternion.Slerp(m_turret.transform.rotation, targetRotation, Time.deltaTime * m_barrelRotationSpeed);
 
         if (hand.IsGrabEnding(this.gameObject))

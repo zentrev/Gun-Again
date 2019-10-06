@@ -107,6 +107,8 @@ GameObject:
   - component: {fileID: 880936767592955855}
   - component: {fileID: 5770069612962626965}
   - component: {fileID: 4965231957818915068}
+  - component: {fileID: 4685349754889422093}
+  - component: {fileID: 6729091912192913202}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -177,6 +179,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &4685349754889422093
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880936767592955854}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!144 &6729091912192913202
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880936767592955854}
+  m_ConnectedBody: {fileID: 1473727437901086088}
+  m_Anchor: {x: 0, y: 0.005329337, z: 0.0015672}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.00010967048, y: 0.0054373005, z: 0.0015672001}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: 0.6841402
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 177
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 105.75587
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 34.726814
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &880936769112417171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1112,7 @@ GameObject:
   - component: {fileID: 5612517834752758377}
   - component: {fileID: 6631132038789665253}
   - component: {fileID: 5294327062919961475}
+  - component: {fileID: 1473727437901086088}
   m_Layer: 0
   m_Name: Turret_Mount
   m_TagString: Untagged
@@ -1117,6 +1181,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!54 &1473727437901086088
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263951500017765166}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &4388346203557026138
 GameObject:
   m_ObjectHideFlags: 0
