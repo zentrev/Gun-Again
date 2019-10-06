@@ -85,7 +85,7 @@ public class TurretController : MonoBehaviour
                         {
                             Debug.Log(hitInfo.transform.name + ": damaged");
 
-                            health.TakeDamage(4);
+                            health.TakeDamage(15);
                         }
                     }
                     GameObject _projectile = Instantiate(m_projectilePrefab, m_fireTransform);

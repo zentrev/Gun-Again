@@ -27,6 +27,11 @@ public class AudioManager : Singleton<AudioManager>
         DontDestroyOnLoad(gameObject);
 	}
 
+    private void Start()
+    {
+        NextSong();
+    }
+
     public void NextSong()
     {
         StopAll();
