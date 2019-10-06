@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
+
+[RequireComponent(typeof(AudioSource))]
 public class TurretController : MonoBehaviour
 {
 
@@ -38,6 +40,8 @@ public class TurretController : MonoBehaviour
     #endregion
 
     [SerializeField] MuzzleFlash m_muzzelFlash = null;
+    [SerializeField] List<AudioClip> m_firingSounds = new List<AudioClip>();
+    protected AudioSource m_audioSource = null;
     protected float m_targetSpeed = 0.0f;
     protected List<Hand> m_currentHands = new List<Hand>();
     protected Animator m_turretAnimator = null;
@@ -46,6 +50,7 @@ public class TurretController : MonoBehaviour
     {
         m_targetSpeed = m_coastSpeed;
         m_turretAnimator = GetComponent<Animator>();
+        m_audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -88,6 +93,12 @@ public class TurretController : MonoBehaviour
                     //Pulse(1.0f, 150.0f, 75.0f, input);
 
                     StartCoroutine(m_muzzelFlash.Flash());
+
+                    if(m_firingSounds.Count != 0)
+                    {
+                        m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count)];
+                        m_audioSource.Play();
+                    }
                 }
             }
         }

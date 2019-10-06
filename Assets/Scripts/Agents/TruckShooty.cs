@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class TruckShooty : MonoBehaviour
 {
     [SerializeField] float m_fireRate = 1.0f;
@@ -16,12 +17,18 @@ public class TruckShooty : MonoBehaviour
     [SerializeField] GameObject m_turret = null;
     [SerializeField] GameObject m_target = null;
     [SerializeField] MuzzleFlash m_muzzelFlash = null;
+    [SerializeField] List<AudioClip> m_firingSounds = new List<AudioClip>();
+    protected AudioSource m_audioSource = null;
+
+
 
 
     void Start()
     {
         m_target = GameObject.FindGameObjectWithTag("Player");
         GetComponent<Animator>().speed = m_fireRate;
+        m_audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -44,5 +51,11 @@ public class TruckShooty : MonoBehaviour
         _projectile.transform.SetParent(null);
 
         StartCoroutine(m_muzzelFlash.Flash());
+
+        if (m_firingSounds.Count != 0)
+        {
+            m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count)];
+            m_audioSource.Play();
+        }
     }
 }
