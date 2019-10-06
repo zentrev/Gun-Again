@@ -184,8 +184,6 @@ GameObject:
   - component: {fileID: 2626269573586100007}
   - component: {fileID: 78720476373927868}
   - component: {fileID: 5697671159759851447}
-  - component: {fileID: 545941194545914157}
-  - component: {fileID: 5166582795859066871}
   m_Layer: 9
   m_Name: Enemy_Truck
   m_TagString: Untagged
@@ -226,6 +224,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomAngleMax: 0.2
   speed: 30
+  decellRate: 0.5
   collisionCollider: {fileID: 0}
 --- !u!114 &-1741975837856672641
 MonoBehaviour:
@@ -426,39 +425,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paths:
+  - {fileID: 6652912334172156040}
+  - {fileID: 8722222694666344669}
+  - {fileID: 1886335854563136877}
   pathCreator: {fileID: 6652912334172156040}
   end: 2
   speed: 40
---- !u!114 &545941194545914157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264332396106308675}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathCreator: {fileID: 1886335854563136877}
-  end: 2
-  speed: 30
---- !u!114 &5166582795859066871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264332396106308675}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pathCreator: {fileID: 8722222694666344669}
-  end: 2
-  speed: 30
 --- !u!1 &412227950888403217
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,12 +802,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: OnEnable
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1295,12 +1268,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: OnEnable
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1436,12 +1409,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: OnEnable
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1625,12 +1598,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: OnEnable
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -1766,8 +1739,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: set_enabled
-        m_Mode: 6
+        m_MethodName: OnEnable
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
