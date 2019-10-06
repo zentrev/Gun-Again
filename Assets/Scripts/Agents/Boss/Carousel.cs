@@ -9,6 +9,6 @@ public class Carousel : MonoBehaviour
 
     public void Shoot()
     {
-        Instantiate(missile, missileSpawnPoint.position, Quaternion.identity, null);
+        Instantiate(missile, missileSpawnPoint.position, missile.transform.rotation, null);
     }
 }
