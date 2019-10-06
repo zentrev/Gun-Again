@@ -12,6 +12,8 @@ public class TurretHandle : MonoBehaviour
 
     public Hand.AttachmentFlags attachmentFlags = Hand.AttachmentFlags.DetachFromOtherHand;
 
+    public TruckFlock m_flocking = null;
+
     protected Quaternion handleOffset = Quaternion.identity;
     protected Quaternion targetRotation = Quaternion.identity;
 
@@ -24,6 +26,7 @@ public class TurretHandle : MonoBehaviour
 
     private void Awake()
     {
+        m_flocking.enabled = false;
         interactable = GetComponent<Interactable>();
         handleOffset = Quaternion.LookRotation(m_turret.transform.position - transform.position, Vector3.up);
     }
@@ -43,6 +46,7 @@ public class TurretHandle : MonoBehaviour
 
     protected virtual void HandAttachedUpdate(Hand hand)
     {
+        m_flocking.enabled = true;
         targetRotation = Quaternion.LookRotation(m_turret.transform.position - hand.transform.position) * Quaternion.Inverse(handleOffset);
         targetRotation = Quaternion.Euler(0.0f, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
         m_turret.transform.rotation = Quaternion.Slerp(m_turret.transform.rotation, targetRotation, Time.deltaTime * m_barrelRotationSpeed);

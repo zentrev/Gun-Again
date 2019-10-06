@@ -53,6 +53,10 @@
       "type": "boolean"
     },
     {
+      "name": "/actions/default/in/RestartButtonPress",
+      "type": "boolean"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },
@@ -157,7 +161,8 @@
       "/actions/platformer/in/Jump": "Jump",
       "/actions/default/in/TriggerTouch": "Trigger Touch",
       "/actions/default/in/TriggerClick": "Trigger Click",
-      "/actions/default/in/TriggerPull": "Trigger Pull"
+      "/actions/default/in/TriggerPull": "Trigger Pull",
+      "/actions/default/in/RestartButtonPress": "Restart Button"
     }
   ]
 }
