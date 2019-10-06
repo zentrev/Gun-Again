@@ -20,12 +20,18 @@ public class BarrelExplosion : MonoBehaviour
     {
         if (collision.transform.tag == "Ground")
         {
-            collisionPoints = Physics.OverlapSphere(transform.position, m_radius);
-            foreach (Collider collider in collisionPoints)
-            {
-                GameObject gameObject = collider.transform.gameObject;
-                if (gameObject.GetComponent<Health>()) gameObject.GetComponent<Health>().TakeDamage(m_damage);
-            }
+            Explode();
+        }
+    }
+
+    public void Explode()
+    {
+        collisionPoints = Physics.OverlapSphere(transform.position, m_radius);
+        foreach (Collider collider in collisionPoints)
+        {
+            GameObject gameObject = collider.transform.gameObject;
+            if (gameObject.GetComponent<Health>()) gameObject.GetComponent<Health>().TakeDamage(m_damage);
+
             if(m_explosionSounds.Count != 0)
             {
                 m_audioSource.clip = m_explosionSounds[Random.Range(0, m_explosionSounds.Count)];
