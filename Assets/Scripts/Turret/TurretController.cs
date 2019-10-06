@@ -41,7 +41,7 @@ public class TurretController : MonoBehaviour
 
     private void Update()
     {
-        //m_turretAnimator.speed = Mathf.Lerp(m_turretAnimator.speed, m_targetSpeed, (m_turretAnimator.speed < m_targetSpeed ? m_acceleration : m_deceleration) * Time.deltaTime);
+        m_turretAnimator.speed = Mathf.Lerp(m_turretAnimator.speed, m_targetSpeed, (m_turretAnimator.speed < m_targetSpeed ? m_acceleration : m_deceleration) * Time.deltaTime);
 
         foreach (Hand hand in m_currentHands)
         {
@@ -72,6 +72,7 @@ public class TurretController : MonoBehaviour
                         }
                     }
                     GameObject _projectile = Instantiate(m_projectilePrefab, m_fireTransform);
+                    _projectile.transform.SetParent(null);
 
                     StartCoroutine(m_muzzelFlash.Flash());
                 }
