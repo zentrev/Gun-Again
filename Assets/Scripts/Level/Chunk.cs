@@ -7,7 +7,7 @@ public class Chunk : MonoBehaviour
     [SerializeField] Transform truckPosition;
     [SerializeField] Transform startNode;
     [SerializeField] Transform endNode;
-    [SerializeField] float chunkLoadDistance = 2000;
+    [SerializeField] float chunkLoadDistance = 1000;
     [SerializeField] float chunkDestroyDistance = 500;
     public bool newChunkLoaded = false;
     public float endNodeDistance;
@@ -30,8 +30,6 @@ public class Chunk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print("start node distance = " + startNodeDistance);
-        print("end node distance = " + endNodeDistance);
         endNodeDistance = EndNode.transform.position.magnitude - truckPosition.transform.position.magnitude;
         if(endNodeDistance < chunkLoadDistance && !newChunkLoaded)
         {

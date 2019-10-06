@@ -5,33 +5,34 @@ using UnityEngine;
 public class TruckFlock : MonoBehaviour
 {
     [SerializeField] float randomAngleMax = 0.1f;
-    [SerializeField] float speed = 30.0f;
+    [SerializeField] float speed = 30;
     [SerializeField] BoxCollider collisionCollider = null;
     private Vector3 forward = Vector3.right;
     private Vector3 newForward = Vector3.right;
     private float randomness = 1.0f;
-    private float timer = 1.0f;
-    private float time = 0.0f;
+    private float timer = 0.5f;
+
+    private int timerId = -1;
 
     // Start is called before the first frame update
     void Start()
     {
+        speed = GameManager.Instance.AgentSpeed;
         collisionCollider = GetComponent<BoxCollider>();
+        timerId = TimeLease.NewTime(gameObject.GetInstanceID().ToString(), timer);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (time >= timer)
+        if (TimeLease.CheckTime(timerId))
         {
             GetNewRandom();
             newForward = new Vector3(1 + randomness, 0, randomness);
-            time = 0;
         }
-        forward = Vector3.Lerp(forward, newForward, 1.0f * Time.deltaTime);
-        //gameObject.transform.position = Vector3.Lerp(transform.position, transform.position + forward * speed * Time.deltaTime, 1);
+        forward = Vector3.Lerp(forward, newForward, timer * Time.deltaTime);
+        gameObject.transform.rotation = Quaternion.LookRotation(Vector3.Lerp(gameObject.transform.forward, newForward, timer * Time.deltaTime));
         gameObject.transform.position += forward * speed * Time.deltaTime;
-        time += Time.deltaTime;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -47,7 +48,12 @@ public class TruckFlock : MonoBehaviour
         randomness = Random.Range(-randomAngleMax, randomAngleMax);
         if (Mathf.Abs(forward.z) + Mathf.Abs(randomness) > 1.0f)
         {
-            GetNewRandom();
+            randomness = -randomness;
         }
+    }
+
+    public void KILLL()
+    {
+        TimeLease.RemoveTime(timerId);
     }
 }
