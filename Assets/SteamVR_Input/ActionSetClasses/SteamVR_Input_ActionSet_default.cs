@@ -25,6 +25,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Boolean Teleport
+        {
+            get
+            {
+                return SteamVR_Actions.default_Teleport;
+            }
+        }
+        
         public virtual SteamVR_Action_Boolean GrabPinch
         {
             get
@@ -81,38 +89,6 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Vector2 TrackPad
-        {
-            get
-            {
-                return SteamVR_Actions.default_TrackPad;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean TrackPadClick
-        {
-            get
-            {
-                return SteamVR_Actions.default_TrackPadClick;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean TrackPadTouch
-        {
-            get
-            {
-                return SteamVR_Actions.default_TrackPadTouch;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean TriggerClick
-        {
-            get
-            {
-                return SteamVR_Actions.default_TriggerClick;
-            }
-        }
-        
         public virtual SteamVR_Action_Boolean TriggerTouch
         {
             get
@@ -129,59 +105,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean AButton
+        public virtual SteamVR_Action_Boolean TriggerClick
         {
             get
             {
-                return SteamVR_Actions.default_AButton;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean AButtonTouch
-        {
-            get
-            {
-                return SteamVR_Actions.default_AButtonTouch;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean BButton
-        {
-            get
-            {
-                return SteamVR_Actions.default_BButton;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean BButtonTouch
-        {
-            get
-            {
-                return SteamVR_Actions.default_BButtonTouch;
-            }
-        }
-        
-        public virtual SteamVR_Action_Vector2 ThumbStick
-        {
-            get
-            {
-                return SteamVR_Actions.default_ThumbStick;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean ThumbStickClick
-        {
-            get
-            {
-                return SteamVR_Actions.default_ThumbStickClick;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean ThumbStickTouch
-        {
-            get
-            {
-                return SteamVR_Actions.default_ThumbStickTouch;
+                return SteamVR_Actions.default_TriggerClick;
             }
         }
         
