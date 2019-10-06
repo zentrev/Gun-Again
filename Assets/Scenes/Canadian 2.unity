@@ -595,21 +595,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_Size.z
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 880936769112417171, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
       propertyPath: m_Name
@@ -670,6 +655,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_touchSpeed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_fullSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: rotationAxis.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: rotationAxis.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: flashTime
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 2501638234491032655, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: far clip plane
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1624630708194341087, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
       propertyPath: hideHighlight.Array.size
@@ -705,51 +720,6 @@ PrefabInstance:
       propertyPath: hideControllerOnAttach
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_touchSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_fullSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: m_hapticAction.actionPath
-      value: /actions/default/out/Haptic
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: rotationAxis.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: rotationAxis.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7858630981242310833, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: flashTime
-      value: 0.015
-      objectReference: {fileID: 0}
-    - target: {fileID: 2501638234491032655, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: far clip plane
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 7915705873668716006, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: HepticAction.actionPath
-      value: /actions/default/out/Haptic
-      objectReference: {fileID: 0}
-    - target: {fileID: 7780192293620910380, guid: 4bf7356fed6f6ed4e981722362d27e5c,
-        type: 3}
-      propertyPath: HepticAction.actionPath
-      value: /actions/default/out/Haptic
-      objectReference: {fileID: 0}
     - target: {fileID: 7394634563105378328, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
       propertyPath: m_UseGravity
@@ -759,6 +729,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsKinematic
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7418475940680091941, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4685349754889422093, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
@@ -805,8 +790,7 @@ PrefabInstance:
       propertyPath: m_EnableCollision
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6380248747153744076, guid: 4bf7356fed6f6ed4e981722362d27e5c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf7356fed6f6ed4e981722362d27e5c, type: 3}
 --- !u!4 &1781756882 stripped
 Transform:
