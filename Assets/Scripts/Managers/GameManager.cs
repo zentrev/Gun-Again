@@ -12,6 +12,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] bool m_debug = false;
     [SerializeField] IndexInput input = null;
     public int enemiesKilled = 0;
+    public bool bossSpawned = false;
 
     #region Level and Sets
 
