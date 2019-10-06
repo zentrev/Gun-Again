@@ -90,8 +90,10 @@ GameObject:
   - component: {fileID: 1171026972113821190}
   - component: {fileID: 8340163104466806616}
   - component: {fileID: -1741975837856672641}
+  - component: {fileID: 5840255155625848184}
   - component: {fileID: 2348187895761983995}
   - component: {fileID: -3079421704502345333}
+  - component: {fileID: 2626269573586100007}
   m_Layer: 9
   m_Name: Enemy_Truck
   m_TagString: Untagged
@@ -146,6 +148,20 @@ MonoBehaviour:
   end: 2
   speed: 30
   spawnDistance: 100
+--- !u!114 &5840255155625848184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264332396106308675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d29e47956900249bb028a43a6861da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_turret: {fileID: 8937945794566603998}
+  m_target: {fileID: 0}
 --- !u!65 &2348187895761983995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -175,6 +191,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!95 &2626269573586100007
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264332396106308675}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c68490259e1e05048a572a41401ffb11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &412227950888403217
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +470,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483712210159278355}
-  m_LocalRotation: {x: 0.000000081460335, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000017979182, y: 0.2420197, z: -2.400401}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalRotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.02976839, z: -0.29524902}
+  m_LocalScale: {x: 12.299987, y: 12.299987, z: 12.299987}
   m_Children:
   - {fileID: 613994094003107548}
   - {fileID: 658450285393116162}
@@ -445,7 +480,7 @@ Transform:
   - {fileID: 5685449918977472810}
   - {fileID: 1615184618268205301}
   - {fileID: 2170079114411415653}
-  m_Father: {fileID: 7960102889166059278}
+  m_Father: {fileID: 641185277382380149}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502184879536216169
@@ -705,6 +740,37 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3158131309922960941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641185277382380149}
+  m_Layer: 0
+  m_Name: TurnyBoi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641185277382380149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3158131309922960941}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 8.130091, y: 8.130091, z: 8.130091}
+  m_Children:
+  - {fileID: 6784463604509326516}
+  m_Father: {fileID: 7960102889166059278}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4245933071712038388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1304,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0.592}
   m_LocalScale: {x: 0.273333, y: 0.273333, z: 0.273333}
   m_Children:
-  - {fileID: 6784463604509326516}
+  - {fileID: 641185277382380149}
   - {fileID: 6633557943169703438}
   - {fileID: 5531069571581808198}
   - {fileID: 4728341723153286053}
