@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TruckFlock : MonoBehaviour
 {
     [SerializeField] float randomAngleMax = 0.1f;
     [SerializeField] float speed = 30;
+    [SerializeField] float decellRate = 0.5f;
     [SerializeField] BoxCollider collisionCollider = null;
     private Vector3 forward = Vector3.right;
     private Vector3 newForward = Vector3.right;
@@ -52,8 +54,27 @@ public class TruckFlock : MonoBehaviour
         }
     }
 
-    public void KILLL()
+    public void Kill()
     {
-        TimeLease.RemoveTime(timerId);
+        StartCoroutine("KillCore");
     }
+
+    IEnumerator KillCore()
+    {
+        while(speed > 0)
+        {
+            speed = Mathf.Lerp(speed, 0.0f, decellRate * Time.deltaTime);
+            if (speed < 0.1f) speed = 0;
+            yield return null;
+        }
+        TimeLease.RemoveTime(timerId);
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Die()
+    {
+        gameObject.GetComponent<EnemyDeath>().enabled = true;
+    }
+
 }
