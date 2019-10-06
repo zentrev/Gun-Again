@@ -35,14 +35,16 @@ public class EnemyDeath : MonoBehaviour
         transform.rotation = pathCreator.path.GetRotationAtDistance(dstTravelled, end);
         if (dstTravelled >= totalDistance)
         {
+            GameManager.Instance.enemiesKilled += 1;
             Destroy(gameObject);
         }
     }
+    
+    //public void OnEnable(int path = 1)
+    //{
+    //    enabled = true;
+    //    pathChoice = path;
+    //}
 
-    public void OnEnable()
-    {
-        enabled = true;
-        pathChoice = 1;
-    }
 
 }

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 817104112309749482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 3840991493077839723}
   - component: {fileID: 3253709114840065966}
   - component: {fileID: 2513667685501234353}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wacky flammes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 5237138674973797951}
   - component: {fileID: 6104433971075644377}
   - component: {fileID: 2889561925517611238}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: S_Edan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4622836147365416476}
   - component: {fileID: 3551422550923319586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flamo (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,8 @@ GameObject:
   - component: {fileID: 7527727429970274762}
   - component: {fileID: 4037533261222487212}
   - component: {fileID: 3973014686417733044}
-  m_Layer: 0
+  - component: {fileID: 8489208396533655236}
+  m_Layer: 9
   m_Name: En_E_me_X__Plosive_B_Arrel_Shad_ed (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -380,6 +381,23 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 20
+  m_currentHealth: 0
+--- !u!54 &8489208396533655236
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3319362301041638033}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &3664483409921835363
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2848768921041492029}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 785492819170146575}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy_S_Edany_Shaded
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -460,7 +478,7 @@ GameObject:
   - component: {fileID: -2745684508030242631}
   - component: {fileID: -6184361111693231452}
   - component: {fileID: 8932720081742829883}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sedan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -579,6 +597,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 200
+  m_currentHealth: 0
 --- !u!114 &-6184361111693231452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,7 +641,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3911564467911111297}
   - component: {fileID: 2050384311486418490}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Armature
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,7 +696,8 @@ GameObject:
   - component: {fileID: 2592790053489507112}
   - component: {fileID: 5937482404530670320}
   - component: {fileID: 5411364268427937506}
-  m_Layer: 0
+  - component: {fileID: 1407179613884096677}
+  m_Layer: 9
   m_Name: En_E_me_X__Plosive_B_Arrel_Shad_ed (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,6 +825,23 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 20
+  m_currentHealth: 0
+--- !u!54 &1407179613884096677
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7267966717041392697}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &7654031437773741267
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,7 +852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7148069849883290917}
   - component: {fileID: 8826571584874994153}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flamo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -864,7 +901,7 @@ GameObject:
   - component: {fileID: 4610504251351831485}
   - component: {fileID: 7178971275173895128}
   - component: {fileID: 5664165946894351748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: T_Runk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -967,7 +1004,7 @@ GameObject:
   - component: {fileID: 4653751202544466687}
   - component: {fileID: 4453625384847179977}
   - component: {fileID: 7994731408775019568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: wacky flammes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,7 +1082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6592868425072023653}
   - component: {fileID: 3804171934526563009}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lauch Path(death)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,6 +9,7 @@ public class TruckFlock : MonoBehaviour
     [SerializeField] float speed = 30;
     [SerializeField] float decellRate = 0.5f;
     [SerializeField] BoxCollider collisionCollider = null;
+    [SerializeField] ParticleSystem boomParts = null;
     private Vector3 forward = Vector3.right;
     private Vector3 newForward = Vector3.right;
     private float randomness = 1.0f;
@@ -61,7 +62,7 @@ public class TruckFlock : MonoBehaviour
 
     IEnumerator KillCore()
     {
-        while(speed > 0)
+        while (speed > 0)
         {
             speed = Mathf.Lerp(speed, 0.0f, decellRate * Time.deltaTime);
             if (speed < 0.1f) speed = 0;
@@ -74,7 +75,8 @@ public class TruckFlock : MonoBehaviour
 
     public void Die()
     {
-        gameObject.GetComponent<EnemyDeath>().enabled = true;
+        boomParts.Play();
+        Destroy(gameObject);
     }
 
 }

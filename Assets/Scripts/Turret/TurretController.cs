@@ -79,10 +79,12 @@ public class TurretController : MonoBehaviour
                 {
                     if (Physics.SphereCast(m_fireTransform.position, m_spherecastSize, m_fireTransform.forward, out RaycastHit hitInfo, m_sphereCastDistance, m_spherecastLayerMask))
                     {
-                        //Debug.Log(hitInfo.transform.name);
+                        Debug.Log(hitInfo.transform.name);
                         Health health = hitInfo.transform.gameObject.GetComponent<Health>();
                         if(health != null)
                         {
+                            Debug.Log(hitInfo.transform.name + ": damaged");
+
                             health.TakeDamage(m_damageAmount);
                         }
                     }
