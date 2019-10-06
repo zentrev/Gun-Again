@@ -13,12 +13,14 @@ public class EnemyDeath : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pathCreator.gameObject.transform.parent = null;
         totalDistance = pathCreator.path.length;
     }
 
     // Update is called once per frame
     void Update()
     {
+        dstTravelled += speed * Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(dstTravelled, end);
         transform.rotation = pathCreator.path.GetRotationAtDistance(dstTravelled, end);
         if (dstTravelled >= totalDistance)

@@ -39,7 +39,7 @@ public class TruckFlock : MonoBehaviour
     {
         if (collision.gameObject.tag == "wall")
         {
-            forward = new Vector3(1, 0, -forward.z * 10);
+            forward = new Vector3(1, 0, -forward.z * 2);
         }
     }
 
