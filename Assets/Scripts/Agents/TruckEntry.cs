@@ -2,9 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TruckEntry : MonoBehaviour
 {
+    [SerializeField] UnityEvent entryEvent = null;
+
     public PathCreator pathCreator;
     public EndOfPathInstruction end = EndOfPathInstruction.Stop;
     public float speed = 30;
@@ -43,6 +46,10 @@ public class TruckEntry : MonoBehaviour
             {
                 gameObject.GetComponent<TruckShooty>().enabled = true;
             }
+            if (GetComponent<BarrelController>())
+            {
+                gameObject.GetComponent<BarrelController>().enabled = true;
+            }
             //gameObject.GetComponent<EnemyDeath>().enabled = true;
             enabled = false;
         }
@@ -53,5 +60,6 @@ public class TruckEntry : MonoBehaviour
         dstTravelled += speed * Time.deltaTime;
         transform.position = pathCreator.path.GetPointAtDistance(dstTravelled, end);
         transform.rotation = pathCreator.path.GetRotationAtDistance(dstTravelled, end);
+        entryEvent.Invoke();
     }
 }

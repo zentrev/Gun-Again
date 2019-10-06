@@ -34,5 +34,9 @@ public class Missile : MonoBehaviour
                 objectsExplodedness[i].gameObject.GetComponent<Health>().TakeDamage(missileDamage);
             }
         }
+
+        // Playboom stuff
+
+        Destroy(gameObject);
     }
 }

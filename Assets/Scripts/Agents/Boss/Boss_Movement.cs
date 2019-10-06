@@ -15,7 +15,7 @@ public class Boss_Movement : MonoBehaviour
     {
         if(player != null)
         {
-            if((transform.position - player.transform.position).magnitude < 100)
+            if((transform.position - player.transform.position).magnitude < 200)
             {
                 transform.position += transform.forward * 30 * Time.deltaTime;
             }

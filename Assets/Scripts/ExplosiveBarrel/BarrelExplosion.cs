@@ -18,7 +18,7 @@ public class BarrelExplosion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Ground")
+        if (collision.transform.tag != "Sedan")
         {
             Explode();
         }
@@ -37,6 +37,7 @@ public class BarrelExplosion : MonoBehaviour
                 m_audioSource.clip = m_explosionSounds[Random.Range(0, m_explosionSounds.Count)];
                 m_audioSource.Play();
             }
+            Destroy(gameObject, 1);
         }
     }
 }

@@ -69,13 +69,13 @@ public class TruckFlock : MonoBehaviour
             yield return null;
         }
         TimeLease.RemoveTime(timerId);
-        yield return new WaitForSeconds(2.0f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void Die()
     {
         boomParts.Play();
+        LevelCreator.Instance.Enemies.Remove(gameObject);
+        GameManager.Instance.enemiesKilled++;
         Destroy(gameObject);
     }
 

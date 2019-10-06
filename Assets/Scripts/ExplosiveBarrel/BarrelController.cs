@@ -8,19 +8,25 @@ public class BarrelController : MonoBehaviour
     public List<GameObject> m_barrels = null;
     private float m_minTimer = 5.0f;
     private float m_maxTimer = 15.0f;
+    private bool moving = false;
+    int tikerid = -1;
 
-    private void Awake()
+    public void Activate()
     {
+        Debug.Log("Activate occured");
         m_barrelAnimator = GetComponent<Animator>();
-        TimeLease.NewTime(gameObject.GetInstanceID().ToString(), Random.Range(m_minTimer, m_maxTimer));
+        moving = true;
     }
 
     void Update()
     {
-        if (TimeLease.CheckTime(gameObject.GetInstanceID().ToString()))
+        if (moving )
         {
+            Debug.Log("It got through it kinda");
+
             TimeLease.NewTime(gameObject.GetInstanceID().ToString(), Random.Range(m_minTimer, m_maxTimer));
             EjectBarrel();
+            Debug.Log("It got through it all");
         }
     }
 

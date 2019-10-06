@@ -7,6 +7,7 @@ TagManager:
   - projectile
   - FxTemporaire
   - wall
+  - Sedan
   layers:
   - Default
   - TransparentFX
