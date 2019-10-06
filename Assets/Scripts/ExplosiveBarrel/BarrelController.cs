@@ -36,6 +36,7 @@ public class BarrelController : MonoBehaviour
         m_barrels.RemoveAt(0);
 
         barrel.transform.SetParent(null);
+        barrel.GetComponent<Rigidbody>().isKinematic = false;
         barrel.GetComponent<Rigidbody>().AddForce(Vector3.up, ForceMode.Impulse);
     }
 }
