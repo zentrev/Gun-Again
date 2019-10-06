@@ -536,6 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3911564467911111297}
+  - component: {fileID: 2050384311486418490}
   m_Layer: 0
   m_Name: Armature
   m_TagString: Untagged
@@ -550,14 +551,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5645154514244640137}
-  m_LocalRotation: {x: -0.72435004, y: -0, z: -0, w: 0.6894324}
+  m_LocalRotation: {x: -0.7080153, y: -0, z: -0, w: 0.70619714}
   m_LocalPosition: {x: 0, y: 0.27778187, z: -1.7661836}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 2848768921041492029}
   m_Father: {fileID: 785492819170146575}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -92.829994, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.145, y: 0, z: 0}
+--- !u!95 &2050384311486418490
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5645154514244640137}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9bce1fb39de7bf1479d754c1b578acc4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7654031437773741267
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4610504251351831485}
   - component: {fileID: 7178971275173895128}
+  - component: {fileID: 5664165946894351748}
   m_Layer: 0
   m_Name: T_Runk
   m_TagString: Untagged
@@ -631,7 +652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7979246916064831392}
   m_LocalRotation: {x: 0.015460376, y: 0, z: -0, w: 0.9998805}
-  m_LocalPosition: {x: -0, y: -0.00052419305, z: 0.0000021457672}
+  m_LocalPosition: {x: -0, y: 0.56, z: 0.02}
   m_LocalScale: {x: 100, y: 114.05843, z: 100}
   m_Children: []
   m_Father: {fileID: 785492819170146575}
@@ -689,6 +710,25 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0000006444752, y: 0.0061462503, z: 0.00021677627}
     m_Extent: {x: 0.015115644, y: 0.0067922994, z: 0.0024956297}
   m_DirtyAABB: 0
+--- !u!95 &5664165946894351748
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7979246916064831392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 05e723bfa460e0f488b2bc6c1546a979, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8560828144282716396
 GameObject:
   m_ObjectHideFlags: 0
