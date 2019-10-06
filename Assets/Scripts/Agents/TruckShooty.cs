@@ -22,10 +22,13 @@ public class TruckShooty : MonoBehaviour
 
 
 
+
     void Start()
     {
         m_target = GameObject.FindGameObjectWithTag("Player");
         GetComponent<Animator>().speed = m_fireRate;
+        m_audioSource = GetComponent<AudioSource>();
+
     }
 
     void Update()
