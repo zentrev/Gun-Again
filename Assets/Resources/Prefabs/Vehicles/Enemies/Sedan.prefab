@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09234c12c12bea54bb61c25d7a0edc41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathCreator: {fileID: 0}
+  pathCreator: {fileID: 3804171934526563009}
   end: 2
   speed: 30
   spawnDistance: 100
@@ -1043,7 +1043,7 @@ GameObject:
   - component: {fileID: 6592868425072023653}
   - component: {fileID: 3804171934526563009}
   m_Layer: 0
-  m_Name: Lauch Path(entry)
+  m_Name: Lauch Path(death)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1103,7 @@ MonoBehaviour:
       - 90
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 1
+    vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1

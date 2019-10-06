@@ -11,7 +11,7 @@ public class EnemyDeath : MonoBehaviour
     float dstTravelled;
     float totalDistance;
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         pathCreator.gameObject.transform.parent = null;
         totalDistance = pathCreator.path.length;
@@ -29,5 +29,9 @@ public class EnemyDeath : MonoBehaviour
         }
     }
 
-    
+    public void Enable()
+    {
+        enabled = true;
+    }
+
 }
