@@ -1,5 +1,7 @@
 {
-   "app_key" : "application.generated.unity.steamvr.exe",
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "application.generated.unity.gunner.exe",
    "bindings" : {
       "/actions/buggy" : {
          "sources" : [
@@ -113,10 +115,16 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/interactui"
+                     "output" : "/actions/default/in/triggerclick"
+                  },
+                  "pull" : {
+                     "output" : "/actions/default/in/triggerpull"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/triggertouch"
                   }
                },
-               "mode" : "button",
+               "mode" : "trigger",
                "path" : "/user/hand/left/input/trigger"
             },
             {
@@ -149,10 +157,16 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/interactui"
+                     "output" : "/actions/default/in/triggerclick"
+                  },
+                  "pull" : {
+                     "output" : "/actions/default/in/triggerpull"
+                  },
+                  "touch" : {
+                     "output" : "/actions/default/in/triggertouch"
                   }
                },
-               "mode" : "button",
+               "mode" : "trigger",
                "path" : "/user/hand/right/input/trigger"
             },
             {
@@ -259,7 +273,10 @@
          ]
       }
    },
+   "category" : "steamvr_input",
    "controller_type" : "knuckles",
    "description" : "",
-   "name" : "knuckles_default"
+   "name" : "My Gunner [Testing] configuration for Index Controller",
+   "options" : {},
+   "simulated_actions" : []
 }
