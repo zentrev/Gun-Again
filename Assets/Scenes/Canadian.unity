@@ -1144,8 +1144,17 @@ PrefabInstance:
       propertyPath: m_EnableCollision
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6380248747153744076, guid: 4bf7356fed6f6ed4e981722362d27e5c, type: 3}
+    - target: {fileID: 6030711999203367045, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7261039339432266343, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_health
+      value: 
+      objectReference: {fileID: 1781756892}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf7356fed6f6ed4e981722362d27e5c, type: 3}
 --- !u!4 &1781756882 stripped
 Transform:
@@ -1201,6 +1210,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 250
+  m_currentHealth: 0
 --- !u!114 &1781756889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1219,6 +1229,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 250
+  m_currentHealth: 0
 --- !u!114 &1781756890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1237,6 +1248,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 250
+  m_currentHealth: 0
 --- !u!114 &1781756891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,6 +1267,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 250
+  m_currentHealth: 0
 --- !u!114 &1781756892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1273,6 +1286,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 500
+  m_currentHealth: 0
 --- !u!1001 &1853239486
 PrefabInstance:
   m_ObjectHideFlags: 0

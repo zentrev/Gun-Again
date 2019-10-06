@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cde7a66aea24fe4ab858d5ea1898439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: {fileID: 6380248747153744076}
+  m_health: {fileID: 0}
   m_smokingStart: 0.25
 --- !u!198 &8560543188231699530
 ParticleSystem:
@@ -7213,7 +7213,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5279067157068995046}
-  - component: {fileID: 6380248747153744076}
   m_Layer: 0
   m_Name: T-Ruck_shaded
   m_TagString: Untagged
@@ -7237,36 +7236,6 @@ Transform:
   m_Father: {fileID: 880936769112417172}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6380248747153744076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9158169094607973365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4000709688635256448}
-        m_MethodName: Kill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 500
-  m_currentHealth: 0
 --- !u!1001 &131736803767742905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7349,10 +7318,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 880936769112417172}
     m_Modifications:
-    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7408,6 +7373,10 @@ PrefabInstance:
     - target: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_LocalScale.z
       value: 2.1789775
+      objectReference: {fileID: 0}
+    - target: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
