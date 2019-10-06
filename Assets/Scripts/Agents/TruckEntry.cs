@@ -38,9 +38,9 @@ public class TruckEntry : MonoBehaviour
         }
         if (dstTravelled >= totalDistance)
         {
-            //gameObject.GetComponent<TruckShooty>().enabled = true;
-            //gameObject.GetComponent<TruckFlock>().enabled = true;
-            gameObject.GetComponent<EnemyDeath>().enabled = true;
+            gameObject.GetComponent<TruckShooty>().enabled = true;
+            gameObject.GetComponent<TruckFlock>().enabled = true;
+            //gameObject.GetComponent<EnemyDeath>().enabled = true;
             enabled = false;
         }
     }

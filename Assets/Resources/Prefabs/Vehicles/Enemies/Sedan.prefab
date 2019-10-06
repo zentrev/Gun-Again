@@ -501,6 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   randomAngleMax: 0.1
   speed: 30
+  decellRate: 0.5
   collisionCollider: {fileID: 0}
 --- !u!65 &4909132714472405262
 BoxCollider:
@@ -590,6 +591,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  paths:
+  - {fileID: 3804171934526563009}
   pathCreator: {fileID: 3804171934526563009}
   end: 2
   speed: 15
@@ -1103,7 +1106,7 @@ MonoBehaviour:
       - 90
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
