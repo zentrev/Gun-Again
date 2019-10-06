@@ -4914,7 +4914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_hapticAction:
-    actionPath: 
+    actionPath: /actions/default/out/Haptic
     needsReinit: 0
   m_fireTransform: {fileID: 6269966529882314291}
   m_projectilePrefab: {fileID: 3671550667910771666, guid: eac74e5a42afaec4ca7e803e41a174d4,
@@ -4925,7 +4925,7 @@ MonoBehaviour:
   m_sphereCastDistance: 1000
   m_spherecastLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_damageAmount: 0
   m_delayTimer: 0
   m_duration: 0.1
@@ -5029,7 +5029,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d326f6846adef894896bb1314ba4d454, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5042,7 +5042,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

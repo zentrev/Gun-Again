@@ -75,6 +75,7 @@ public class TruckFlock : MonoBehaviour
     public void Die()
     {
         gameObject.GetComponent<EnemyDeath>().enabled = true;
+        Destroy(gameObject);
     }
 
 }

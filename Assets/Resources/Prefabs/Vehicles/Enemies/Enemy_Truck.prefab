@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 2626269573586100007}
   - component: {fileID: 78720476373927868}
   - component: {fileID: 5697671159759851447}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Enemy_Truck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ MonoBehaviour:
   randomAngleMax: 0.2
   speed: 30
   decellRate: 0.5
-  collisionCollider: {fileID: 0}
+  collisionCollider: {fileID: 2348187895761983995}
 --- !u!114 &-1741975837856672641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
   m_muzzelFlash: {fileID: 6528688222835165362}
   m_firingSounds:
   - {fileID: 8300000, guid: d326f6846adef894896bb1314ba4d454, type: 3}
+  m_audioSource: {fileID: 78720476373927868}
 --- !u!65 &2348187895761983995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -327,7 +328,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d326f6846adef894896bb1314ba4d454, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -340,7 +341,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -801,9 +802,9 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: OnEnable
-        m_Mode: 3
+      - m_Target: {fileID: 8340163104466806616}
+        m_MethodName: Die
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -815,6 +816,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &1532461084224357077
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1283,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &4439300221027917810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1425,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &5202078357786428185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,9 +1601,9 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: OnEnable
-        m_Mode: 3
+      - m_Target: {fileID: 8340163104466806616}
+        m_MethodName: Die
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1611,6 +1615,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 50
+  m_currentHealth: 0
 --- !u!1 &6075976730574665022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,6 +1705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6929751291137024340}
   - component: {fileID: 319579960855693937}
+  - component: {fileID: 1719380328326889782}
   m_Layer: 9
   m_Name: t-ruck_enemy_shaded
   m_TagString: Untagged
@@ -1738,9 +1744,9 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5697671159759851447}
-        m_MethodName: OnEnable
-        m_Mode: 3
+      - m_Target: {fileID: 8340163104466806616}
+        m_MethodName: Die
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1752,6 +1758,20 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_maxHealth: 100
+  m_currentHealth: 0
+--- !u!65 &1719380328326889782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6228537441747211079}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.917182, y: 3.9225447, z: 8.965384}
+  m_Center: {x: -0.054794684, y: 0.52786165, z: 2.7117875}
 --- !u!1 &6353645313229276445
 GameObject:
   m_ObjectHideFlags: 0

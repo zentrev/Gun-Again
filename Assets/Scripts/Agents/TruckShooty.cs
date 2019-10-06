@@ -18,7 +18,7 @@ public class TruckShooty : MonoBehaviour
     [SerializeField] GameObject m_target = null;
     [SerializeField] MuzzleFlash m_muzzelFlash = null;
     [SerializeField] List<AudioClip> m_firingSounds = new List<AudioClip>();
-    protected AudioSource m_audioSource = null;
+    [SerializeField]protected AudioSource m_audioSource = null;
 
 
 
@@ -27,7 +27,7 @@ public class TruckShooty : MonoBehaviour
     {
         m_target = GameObject.FindGameObjectWithTag("Player");
         GetComponent<Animator>().speed = m_fireRate;
-        m_audioSource = GetComponent<AudioSource>();
+        //m_audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -40,7 +40,7 @@ public class TruckShooty : MonoBehaviour
     {
         if (Physics.SphereCast(m_fireTransform.position, m_spherecastSize, m_fireTransform.forward, out RaycastHit hitInfo, m_sphereCastDistance, m_spherecastLayerMask))
         {
-            //Debug.Log(hitInfo.transform.name);
+            Debug.Log(hitInfo.transform.name);
             Health health = hitInfo.transform.gameObject.GetComponent<Health>();
             if (health != null)
             {
@@ -54,8 +54,10 @@ public class TruckShooty : MonoBehaviour
 
         if (m_firingSounds.Count != 0)
         {
-            m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count-1)];
-            m_audioSource.Play();
+            //m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count-1)];
+            //m_audioSource.Play();
         }
+        m_audioSource.Play();
+
     }
 }
