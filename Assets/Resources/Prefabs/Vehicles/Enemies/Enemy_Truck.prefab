@@ -341,8 +341,8 @@ MonoBehaviour:
       - {x: -1.1694747, y: 9.709623, z: -12.269653}
       - {x: -1.4144219, y: 10, z: -17}
       - {x: -1.4171813, y: 10.003271, z: -17.053288}
-      - {x: -11.579738, y: 0, z: -35.571823}
-      - {x: 0.000025431313, y: 0, z: -35.004436}
+      - {x: -11.57975, y: 0, z: -35.57191}
+      - {x: 0.000025431313, y: 0, z: -35.004486}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -614,7 +614,6 @@ GameObject:
   - component: {fileID: 3789158442347544334}
   - component: {fileID: 2669935276368832102}
   - component: {fileID: 6232234505290741944}
-  - component: {fileID: 7313823382793368535}
   m_Layer: 9
   m_Name: Hover_Engine1
   m_TagString: Untagged
@@ -684,36 +683,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &7313823382793368535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2649991432598547137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2762995212550808744}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 50
-  m_currentHealth: 0
 --- !u!1 &3559742035660385794
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,7 +805,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 675957963848780363}
-  - component: {fileID: 7864816007660462446}
   m_Layer: 9
   m_Name: t-ruck_enemy_shaded
   m_TagString: Untagged
@@ -860,36 +828,6 @@ Transform:
   m_Father: {fileID: 8721857197177681177}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7864816007660462446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4555995716393859160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2762995212550808744}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 100
-  m_currentHealth: 0
 --- !u!1 &4799147850769640754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,7 +958,6 @@ GameObject:
   - component: {fileID: 3441978825358361467}
   - component: {fileID: 868259024063357831}
   - component: {fileID: 8281307961103608939}
-  - component: {fileID: 500494178976754722}
   m_Layer: 9
   m_Name: Hover_Engine2
   m_TagString: Untagged
@@ -1090,36 +1027,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &500494178976754722
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6027652053309966059}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2762995212550808744}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 50
-  m_currentHealth: 0
 --- !u!1 &6098339592697301505
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,7 +1038,6 @@ GameObject:
   - component: {fileID: 3624490028099011493}
   - component: {fileID: 2074276394850611283}
   - component: {fileID: 2420936040073702994}
-  - component: {fileID: 778770809636913155}
   m_Layer: 9
   m_Name: Hover_Engine3
   m_TagString: Untagged
@@ -1201,36 +1107,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &778770809636913155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6098339592697301505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2762995212550808744}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 50
-  m_currentHealth: 0
 --- !u!1 &6111807170442294509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,8 +1189,8 @@ MonoBehaviour:
       - {x: -1.1900985, y: 9.734692, z: 21.727158}
       - {x: -1.4144218, y: 10, z: 17}
       - {x: -1.4171811, y: 10.003263, z: 16.941853}
-      - {x: -11.592665, y: 0, z: 34.486626}
-      - {x: 0.000025431314, y: 0, z: 35.009514}
+      - {x: -11.592673, y: 0, z: 34.486706}
+      - {x: 0.000025431314, y: 0, z: 35.00956}
       isClosed: 0
       space: 0
       controlMode: 0
@@ -1445,9 +1321,7 @@ GameObject:
   - component: {fileID: 4326167573776951956}
   - component: {fileID: 5564323206020428856}
   - component: {fileID: 7520373530414427299}
-  - component: {fileID: 2762995212550808744}
-  - component: {fileID: 7987559059524028978}
-  - component: {fileID: 3384863689161676008}
+  - component: {fileID: 3385856929793494651}
   m_Layer: 9
   m_Name: Enemy_Truck
   m_TagString: Untagged
@@ -1592,7 +1466,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d326f6846adef894896bb1314ba4d454, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1605,7 +1479,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1678,54 +1552,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2762995212550808744
+--- !u!114 &3385856929793494651
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7701446541600372572}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paths: []
-  pathCreator: {fileID: 3826358456456977303}
-  end: 2
-  speed: 40
---- !u!114 &7987559059524028978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701446541600372572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paths: []
-  pathCreator: {fileID: 8315769501955849842}
-  end: 2
-  speed: 30
---- !u!114 &3384863689161676008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701446541600372572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29056cec61fa39b47b889d57ef7e3b14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  paths: []
-  pathCreator: {fileID: 1171392675626841026}
-  end: 2
-  speed: 30
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1942219247427734599}
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 400
+  m_currentHealth: 0
 --- !u!1 &7850503236631636494
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,7 +2067,6 @@ GameObject:
   - component: {fileID: 5817993862098676064}
   - component: {fileID: 2311589627543189884}
   - component: {fileID: 658412722365317994}
-  - component: {fileID: 5987885374725708285}
   m_Layer: 9
   m_Name: Hover_Engine
   m_TagString: Untagged
@@ -2281,36 +2136,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5987885374725708285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9048511251704148854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2762995212550808744}
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  m_maxHealth: 50
-  m_currentHealth: 0
 --- !u!1 &9069445212203348492
 GameObject:
   m_ObjectHideFlags: 0
