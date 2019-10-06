@@ -6,6 +6,8 @@ using Valve.VR.InteractionSystem;
 public class TurretController : MonoBehaviour
 {
 
+    [SerializeField] SteamVR_Action_Vibration m_hapticAction = null;
+
     #region Firing Fields
     [Header("Firing")]
     [SerializeField] Transform m_fireTransform = null;
@@ -18,6 +20,13 @@ public class TurretController : MonoBehaviour
     [SerializeField] [Range(0.0f, 1000.0f)] float m_damageAmount = 0.0f;
     #endregion
 
+    #region Haptic Fields
+    [Header("Haptic")]
+    [SerializeField] [Range(0.0f, 1000.0f)] float m_delayTimer = 0.0f;
+    [SerializeField] [Range(0.0f, 1000.0f)] float m_duration = 0.1f;
+    [SerializeField] [Range(0.0f, 1000.0f)] float m_frequency = 0.0f;
+    [SerializeField] [Range(0.0f, 1000.0f)] float m_amplitude = 150.0f;
+    #endregion
 
     #region Rotation Fields
     [Header("Rotation")]
@@ -55,6 +64,7 @@ public class TurretController : MonoBehaviour
 
     public void Fire()
     {
+        m_frequency = m_turretAnimator.speed;
         foreach (Hand hand in m_currentHands)
         {
             IndexInput input = hand.GetComponent<IndexInput>();
@@ -73,6 +83,9 @@ public class TurretController : MonoBehaviour
                     }
                     GameObject _projectile = Instantiate(m_projectilePrefab, m_fireTransform);
                     _projectile.transform.SetParent(null);
+                    if (hand.handType == SteamVR_Input_Sources.RightHand) Pulse(m_delayTimer, m_duration, m_frequency, m_amplitude, SteamVR_Input_Sources.RightHand);
+                    if (hand.handType == SteamVR_Input_Sources.LeftHand) Pulse(m_delayTimer, m_duration, m_frequency, m_amplitude, SteamVR_Input_Sources.LeftHand);
+                    //Pulse(1.0f, 150.0f, 75.0f, input);
 
                     StartCoroutine(m_muzzelFlash.Flash());
                 }
@@ -89,5 +102,12 @@ public class TurretController : MonoBehaviour
     {
         if (!m_currentHands.Contains(hand)) return;
         m_currentHands.Remove(hand);
+    }
+
+
+    private void Pulse(float delay, float duration, float frequency, float amplitude, SteamVR_Input_Sources source)
+    {
+        //input.Heptic.Execute(0, duration, frequency, amplitude, input.Input);
+        m_hapticAction.Execute(delay, duration, frequency, amplitude, source);
     }
 }
