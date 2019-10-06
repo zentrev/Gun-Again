@@ -10,6 +10,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] float m_agentSpeed = 30.0f;
     [Header("Debug")]
     [SerializeField] bool m_debug = false;
+    [SerializeField] IndexInput input = null;
 
     #region Level and Sets
 
@@ -106,6 +107,7 @@ public class GameManager : Singleton<GameManager>
     private void Update()
     {
         if (m_debug && CurentSet != eSet.DEBUG) SetSet(eSet.DEBUG);
+        if (input.BButtonDown) SceneManager.LoadScene(SceneManager.GetActiveScene().ToString());
 
         UpdateSet();
 
