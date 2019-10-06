@@ -6,8 +6,8 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] UnityEvent OnDeath;
-    [SerializeField] [Range(0.0f, 500.0f)] float m_maxHealth = 0.0f;
-    private float m_currentHealth = 0.0f;
+    [SerializeField] [Range(0.0f, 500.0f)] public float m_maxHealth = 0.0f;
+    public float m_currentHealth = 0.0f;
 
     private void Awake()
     {
