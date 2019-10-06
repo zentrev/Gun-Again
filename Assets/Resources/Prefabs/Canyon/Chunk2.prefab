@@ -52,7 +52,6 @@ MonoBehaviour:
   chunkLoadDistance: 2000
   chunkDestroyDistance: 500
   newChunkLoaded: 0
-  bossLoaded: 0
   endNodeDistance: 0
   startNodeDistance: 0
 --- !u!1 &636745816373100171
@@ -422,6 +421,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1051962211363602272, guid: de7bf98444d52cf48a56afe0816b3b2d,
+        type: 3}
+      propertyPath: pathCreator
+      value: 
+      objectReference: {fileID: 2350441800975816359}
     - target: {fileID: 1282777236901897367, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -435,7 +439,7 @@ PrefabInstance:
     - target: {fileID: 1282777236901897367, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0319815
+      value: -1.1177306
       objectReference: {fileID: 0}
     - target: {fileID: 6480342442401696008, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
@@ -450,7 +454,7 @@ PrefabInstance:
     - target: {fileID: 6480342442401696008, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4008073
+      value: -1.5171813
       objectReference: {fileID: 0}
     - target: {fileID: 4082194547210647930, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
@@ -465,7 +469,7 @@ PrefabInstance:
     - target: {fileID: 4082194547210647930, guid: de7bf98444d52cf48a56afe0816b3b2d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5161605
+      value: -1.6420621
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3384863689161676008, guid: de7bf98444d52cf48a56afe0816b3b2d, type: 3}
