@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 5770069612962626965}
   - component: {fileID: 4965231957818915068}
   m_Layer: 0
-  m_Name: Berrel
+  m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_fireTransform: {fileID: 6269966529882314291}
-  m_projectilePrefab: {fileID: 3266649248901969247, guid: 0fa759f621780f443a7e159a7c2eb591,
+  m_projectilePrefab: {fileID: 3671550667910771666, guid: eac74e5a42afaec4ca7e803e41a174d4,
     type: 3}
   m_minTriggerPull: 0.2
   m_sphereCastFiring: 1

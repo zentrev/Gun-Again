@@ -7,7 +7,7 @@ using TMPro;
 
 public class GameManager : Singleton<GameManager>
 {
-
+    [SerializeField] float m_agentSpeed = 30.0f;
     [Header("Debug")]
     [SerializeField] bool m_debug = false;
 
@@ -15,6 +15,8 @@ public class GameManager : Singleton<GameManager>
 
     [SerializeField] eSet m_curentSet = eSet.NONE;
     public eSet CurentSet { get => m_curentSet; set { SetSet(value); } }
+
+    public float AgentSpeed { get => m_agentSpeed; set => m_agentSpeed = value; }
 
     public enum eSet
     {
