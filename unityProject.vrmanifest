@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.gunner.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\jonat\\Desktop\\Gunner\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Gunner [Testing]"
+        }
+      }
+    }
+  ]
+}
