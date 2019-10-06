@@ -118,7 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b10a406c8efd5439736ac666814d47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  truckPosition: {fileID: 0}
+  truckPosition: {fileID: 880936769112417172, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
   startNode: {fileID: 5242284207396940954}
   endNode: {fileID: 4671850196232529852}
   chunkLoadDistance: 2000
