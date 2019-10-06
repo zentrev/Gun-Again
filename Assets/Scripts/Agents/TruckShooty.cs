@@ -54,7 +54,7 @@ public class TruckShooty : MonoBehaviour
 
         if (m_firingSounds.Count != 0)
         {
-            m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count)];
+            m_audioSource.clip = m_firingSounds[Random.Range(0, m_firingSounds.Count-1)];
             m_audioSource.Play();
         }
     }

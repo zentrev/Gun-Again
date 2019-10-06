@@ -39,10 +39,10 @@ public class EnemyDeath : MonoBehaviour
         }
     }
 
-    public void OnEnable(int path = 1)
+    public void OnEnable()
     {
         enabled = true;
-        pathChoice = path;
+        pathChoice = 1;
     }
 
 }
