@@ -352,6 +352,7 @@ MonoBehaviour:
   isPersistant: 0
   m_agentSpeed: 30
   m_debug: 0
+  input: {fileID: 0}
   m_curentSet: 0
   m_debugCanvasPrefab: {fileID: 0}
 --- !u!1 &1483163784
@@ -854,6 +855,11 @@ PrefabInstance:
       propertyPath: m_hapticAction.actionPath
       value: /actions/default/out/Haptic
       objectReference: {fileID: 0}
+    - target: {fileID: 5770069612962626965, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: m_damageAmount
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 1597924416633578338, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
       propertyPath: m_Layer
@@ -1029,6 +1035,11 @@ PrefabInstance:
       propertyPath: HepticAction.actionPath
       value: /actions/default/out/Haptic
       objectReference: {fileID: 0}
+    - target: {fileID: 7915705873668716006, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+        type: 3}
+      propertyPath: BButtonAction.actionPath
+      value: /actions/default/in/RestartButtonPress
+      objectReference: {fileID: 0}
     - target: {fileID: 7780192293620910380, guid: 4bf7356fed6f6ed4e981722362d27e5c,
         type: 3}
       propertyPath: HepticAction.actionPath
@@ -1133,6 +1144,126 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1781756881}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781756883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1478262869054626220, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781756881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781756884 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1406524035901887814, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781756881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781756885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7270171651924801900, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781756881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781756886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4445258136134721755, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781756881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1781756887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9158169094607973365, guid: 4bf7356fed6f6ed4e981722362d27e5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781756881}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1781756888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781756883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 250
+--- !u!114 &1781756889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781756884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 250
+--- !u!114 &1781756890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781756885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 250
+--- !u!114 &1781756891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781756886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 250
+--- !u!114 &1781756892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781756887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a84f1e06d2e3b8f44b00e383255786df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_maxHealth: 500
 --- !u!1001 &1853239486
 PrefabInstance:
   m_ObjectHideFlags: 0
