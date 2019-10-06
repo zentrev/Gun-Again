@@ -20,7 +20,7 @@ public class TruckShooty : MonoBehaviour
 
     void Start()
     {
-        //m_target = GameObject.FindGameObjectWithTag("Player");
+        m_target = GameObject.FindGameObjectWithTag("Player");
         GetComponent<Animator>().speed = m_fireRate;
     }
 
