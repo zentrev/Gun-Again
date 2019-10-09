@@ -33,7 +33,7 @@ public class Chunk : MonoBehaviour
         endNodeDistance = EndNode.transform.position.magnitude - truckPosition.transform.position.magnitude;
         if(endNodeDistance < chunkLoadDistance && !newChunkLoaded)
         {
-            if(!GameManager.Instance.bossSpawned && GameManager.Instance.enemiesKilled < 15)
+            if(!GameManager.Instance.bossSpawned && GameManager.Instance.enemiesKilled < 4)
             {
                 nextChunk = LevelCreator.Instance.CanyonBits[Random.Range(0, LevelCreator.Instance.CanyonBits.Length-1)];
             }

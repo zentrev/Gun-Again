@@ -22,14 +22,7 @@ public class TruckEntry : MonoBehaviour
         gameObject.transform.parent = null;
         gameObject.GetComponent<TruckFlock>().enabled = false;
         totalDistance = pathCreator.path.length;
-        if (LevelCreator.Instance.Enemies.Count >= 5)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            LevelCreator.Instance.Enemies.Add(gameObject);
-        }
+        
     }
 
     // Update is called once per frame

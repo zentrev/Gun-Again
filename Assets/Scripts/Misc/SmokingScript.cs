@@ -15,7 +15,7 @@ public class SmokingScript : MonoBehaviour
     }
     void Update()
     {
-        Debug.Log(m_health.m_currentHealth + " : " + m_health.m_maxHealth);
+
         if (m_health.m_currentHealth / m_health.m_maxHealth > m_smokingStart && m_particals.isPlaying)
         {
             m_particals.Stop();
